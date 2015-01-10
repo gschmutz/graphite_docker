@@ -53,8 +53,8 @@ run	cd /var/lib/graphite/webapp/graphite && python manage.py syncdb --noinput
 
 # graphana
 run     mkdir /src/grafana && cd /src/grafana &&\
-	wget https://github.com/torkelo/grafana/releases/download/v1.4.0/grafana-1.4.0.tar.gz &&\
-	tar -xzvf grafana-1.4.0.tar.gz && rm grafana-1.4.0.tar.gz
+	wget https://github.com/grafana/grafana/archive/v1.9.1.tar.gz &&\
+	tar -xzvf v1.9.1.tar.gz && rm v1.9.1.tar.gz
 
 add     ./grafana/config.js /src/grafana/config.js
 
