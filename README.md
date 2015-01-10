@@ -30,7 +30,7 @@ recommended) you can use docker's data volumes feature. For example, to store
 graphite's metric database at `/data/graphite` on the host, you could use:
 
     docker run -v /data/graphite:/var/lib/graphite/storage/whisper \
-               -d nickstenning/graphite
+               -d gschmutz/graphite-grafana
 
 ### Technical details
 
@@ -49,6 +49,7 @@ PR welcome to improve this config.
 
 ### Based off
 
-https://github.com/nickstenning/dockerfiles.git
+https://github.com/SamSaffron/graphite_docker
+https://github.com/nickstenning/dockerfiles
 
-Extended by Sam Saffron
+Adapted by Guido Schmutz
