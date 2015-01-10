@@ -23,8 +23,8 @@ run  apt-get install libfuse2 &&\
      cd /tmp ; dpkg-deb -b . /fuse.deb &&\
      cd /tmp ; dpkg -i /fuse.deb
 
-run    cd ~ && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.0.1.deb
-run    cd ~ && dpkg -i elasticsearch-1.0.1.deb && rm elasticsearch-1.0.1.deb
+run    cd ~ && wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.2.deb
+run    cd ~ && dpkg -i elasticsearch-1.4.2.deb && rm elasticsearch-1.4.2.deb
 run    apt-get -y install openjdk-7-jre
 
 
